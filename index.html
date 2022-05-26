@@ -4,30 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/index.css">
     <title>Utah Injury Analysis Group</title>
 </head>
 <body>
-    <header class="header">        
-        <div>
-            <img src="./assets/images/iaglogo.png" role="complementary" alt="Utah Injury Analysis Group Logo">
-        </div>
-        <nav>
-            <ul class="nav">
-                <li>
+    <div class="header">
+        <div class="iconWrapper">
+            <img class="logo" src="./assets/images/iaglogo.png" role="complementary" alt="Utah Injury Analysis Group Logo">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a> 
+        </div>  
+        <div id="navLinks">
+                <a href="#specialties">
                     Provider Specialties
-                </li>
-                <li>
+                </a>
+                <a href="#contact">
                     Redacted Report
-                </li>
-                <li>
+                </a>
+                <a href="#about">
                     About Us
-                </li>
-            </ul>
-        </nav>
-    </header>
+                </a>
+        </div>
+        
+    </div>
     <div id="hero" class="banner">
         
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html>
