@@ -11,12 +11,16 @@ body {
   color: var(--dark);
   font-size: 16px;
 }
+
+/* HEADER STYLING */
+
 .header {
     overflow: hidden;
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
   position: relative;
   display: flex;
   flex-direction: column;
+  border-bottom: 3px solid #2595bedd;
 }
 
 #navLinks {
@@ -30,8 +34,21 @@ body {
   font-size: 17px;
   display: block;
 }
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    height: min-content;
+    padding-right: 1rem;
+}
+
+.dropdown a {
+    height: 50%;
+    width: auto;
+}
+
 #navLinks a {
-    color: white;
+    color: #2596be;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -39,17 +56,17 @@ body {
 }
 
 .header a.icon {
-    background: black;
+    background: #2596be;
   }
 
 .header a:hover {
-    background-color: #ddd;
+    background-color: rgba(221, 221, 221, 0.346);
     color: black;
   }
 
 
 .header-logo {
-    border-bottom: 3px solid #afd1e1;
+    border-bottom: 3px solid #2596bedd;
     
     display: flex;
     justify-content: center;
@@ -58,6 +75,7 @@ body {
 .iconWrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -79,20 +97,73 @@ nav {
     list-style: none;
 }
 
+.gradient-border {
+    border-bottom: 3px solid;
+    border-image: linear-gradient(45deg, #3f9cbf, #2596bedd) 1;
+  }
+
+  /* END HEADER */
+main {
+    max-width: 90%;
+    margin: 0 5% 0 5%;
+
+}
+
+/* HERO */
+
+#hero {
+
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+.hero-overlay {
+    display: flex;
+    position: relative;
+    justify-items: center;
+    flex-direction: column;
+    transform: skew(50%, 50%);
+}
+
 @media screen and (min-width: 800px) {
-    .header-logo {
-        border-bottom: 3px solid #afd1e1;
+    .gradient-border {
+        border: none;
+    }
+    .logo {
+        padding: 0 0 1rem 1rem;
     }
     .logo {
         width: 30%;
         height: auto;
     }
+    .dropdown {
+        display: none;
+    }
+
+    #navLinks {
+        display: inline-flex;
+        background-color: #90d7f6;
+        color: #203c58;
+    }
+
+    #navLinks a {
+        display: inline-flex;
+        background-color: #ffffff;
+        color: #203c58;
+        margin: 5px 2px 5px 2px;
+        border-radius: 5%;
+    }
+    #navLinks a:hover {
+        background-color: #eef4f9;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) {
-    .header-logo {
-        border-bottom: 3px solid #afd1e1;
-    }
     .logo {
         width: 20%;
         height: auto;
