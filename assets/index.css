@@ -2,14 +2,17 @@
   box-sizing: border-box;
 }
 
+
 body {
-  background-color: var(--secondary);
-  margin: 0;
+  background-color: rgba(128, 128, 128, 0.15);
+  max-width: 90%;
+  margin: 0 5% 0 5%;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
   color: var(--dark);
   font-size: 16px;
+  
 }
 
 /* HEADER STYLING */
@@ -53,6 +56,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  
 }
 
 .header a.icon {
@@ -90,7 +94,7 @@ nav {
 .nav {
     display: flex;
     flex-direction: row;
-    
+    align-content: end;
 }
 
 .nav li {
@@ -112,24 +116,53 @@ main {
 /* HERO */
 
 #hero {
-
-}
-
-.banner img {
+    background-image: url("../assets/images/meeting.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
     width: 100%;
     height: auto;
 }
 
 
-.hero-overlay {
+.hero-cta {
     display: flex;
     position: relative;
     justify-items: center;
+    align-items: center;
     flex-direction: column;
-    transform: skew(50%, 50%);
+    color: white;
+    text-align: center;
+    padding: 10% 30% 10% 30%;
+}
+
+.cta-text {
+    padding: 1rem;
+    margin: 0;
+}
+
+.hero-cta h1 {
+ font-size: 50px;
+ text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+ background-color: #3f9dbfd0;
+ /* border-bottom: 3px solid #2596bedd ; */
+}
+
+.hero-cta p {
+ font-size: 22px;
+ text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+ background-color: #3f9dbfd0;
 }
 
 @media screen and (min-width: 800px) {
+    .header {
+        display: flex;
+        flex: column;
+        flex-direction: row;
+        align-content: space-around;
+        justify-content: space-between;
+    }
+
     .gradient-border {
         border: none;
     }
@@ -146,8 +179,9 @@ main {
 
     #navLinks {
         display: inline-flex;
-        background-color: #90d7f6;
-        color: #203c58;
+        color: #ffffff;
+        justify-content: flex-end;
+        padding-right: 1rem;
     }
 
     #navLinks a {
@@ -156,7 +190,10 @@ main {
         color: #203c58;
         margin: 5px 2px 5px 2px;
         border-radius: 5%;
+        text-align: center;
     }
+
+    
     #navLinks a:hover {
         background-color: #eef4f9;
     }
@@ -169,3 +206,4 @@ main {
         height: auto;
     }
 }
+
