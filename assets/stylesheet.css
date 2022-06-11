@@ -166,7 +166,7 @@ main {
     display: flex;
     position: relative;
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     color: white;
     text-align: left;
@@ -174,18 +174,24 @@ main {
 }
 
 .cta-text {
-    /* padding: 1rem; */
+    padding: 0.5rem ;
     margin: 0;
     word-wrap: break-word;
+    text-align: left;
 }
 
 .hero-cta h1 {
- font-size: 40px;
+ font-size: 36px;
  text-shadow: 2px 2px 8px rgb(0 0 0 / 80%);
 }
 
+.hero-cta h3 {
+    font-size: 30;
+    text-shadow: 2px 2px 8px rgb(0 0 0 / 80%);
+}
+
 .hero-cta p {
- font-size: 24px;
+ font-size: 20px;
  text-shadow: 2px 2px 8px rgb(0 0 0 / 80%);
 }
 
@@ -272,7 +278,7 @@ main {
         
     }
 
-    .hero-cta h1 {
+    .hero-cta h1, .hero-cta h3 {
         font-size: 40px;
         text-shadow: 2px 2px 8px rgb(0 0 0 / 80%);
        }
@@ -297,7 +303,7 @@ main {
         width: 20%;
         height: auto;
     }
-    .hero-cta h1 {
+    .hero-cta h1, .hero-cta h3 {
         font-size: 40px;
         text-shadow: 2px 2px 8px rgb(0 0 0 / 80%);
        }

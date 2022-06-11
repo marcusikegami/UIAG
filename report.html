@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/report.css">
+    <title>Utah Injury Analysis Group</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrapper">
+          <div class="icon-wrapper" >
+            <a class="home-btn"></a>
+              <img class="logo" src="./assets/images/iaglogo.png" role="complementary" alt="Utah Injury Analysis Group Logo">
+              <div class="logo-text">
+                <p id="logo-text">Injury Analysis Group</p>
+                <p class="logo-underline"></p>
+              </div>
+          </div>
+            <div class="dropdown">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a> 
+            </div>
+        </div> 
+        <div id="navLinks">
+                <a class="button-34" href="#specialties">
+                    Provider Specialties
+                </a>
+                <a class="button-34" href="#contact">
+                    Redacted Report
+                </a>
+                <a class="button-34" href="#about">
+                    About Us
+                </a>
+        </div>
+        
+    </div>
+    <main>
+        <div>
+            <img src="./assets/images/redacted.jpg" />
+            <img src="./assets/images/redacted_2.jpg" />
+        </div>    
+    </main>
+    
+    <div id="footer">
+
+    </div>
+</body>
+<script>
+    function myFunction() {
+      if(window.matchMedia("(max-width: 800px)").matches) {
+           var x = document.getElementById("navLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+     } 
+     }
+ }
+</script>
+</html>
