@@ -53,7 +53,7 @@ body {
     justify-content: center;
 }
 
-.header a {
+.dropdown, .navLinks {
     color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -86,10 +86,10 @@ body {
     background: #2596be;
   }
 
-.header a:hover {
+/* .header a:hover {
     background-color: rgba(221, 221, 221, 0.346);
     color: black;
-  }
+  } */
 
 
 .header-logo {
@@ -167,6 +167,7 @@ nav {
     background-size: cover; 
     width: 100%;
     height: auto;
+    /* font-family: 'Adelle Sans', Helvetica, Arial, sans-serif; */
 }
 
 .banner-gradient {
@@ -240,29 +241,39 @@ nav {
 
 
  main ul { 
-    padding: auto;
+    padding: 0;
     text-align: left;
  }
 
  main li {
-    padding-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    border-top: 1px solid #2596be;
  }
 
  
 
- .service-menu {
+ .service-menu, .specialty-menu {
     background:
-    linear-gradient(to right, #2596be 4px, transparent 4px) 0 0,
-    linear-gradient(to right, #2596be 4px, transparent 4px) 0 100%,
-    linear-gradient(to left, #2596be 4px, transparent 4px) 100% 0,
-    linear-gradient(to left, #2596be 4px, transparent 4px) 100% 100%,
-    linear-gradient(to bottom, #2596be 4px, transparent 4px) 0 0,
-    linear-gradient(to bottom, #2596be 4px, transparent 4px) 100% 0,
-    linear-gradient(to top, #2596be 4px, transparent 4px) 0 100%,
-    linear-gradient(to top, #2596be 4px, transparent 4px) 100% 100%;
+    linear-gradient(to right, #2596be 3px, transparent 3px) 0 0,
+    linear-gradient(to right, #2596be 3px, transparent 3px) 0 100%,
+    linear-gradient(to left, #2596be 3px, transparent 3px) 100% 0,
+    linear-gradient(to left, #2596be 3px, transparent 3px) 100% 100%,
+    linear-gradient(to bottom, #2596be 3px, transparent 3px) 0 0,
+    linear-gradient(to bottom, #2596be 3px, transparent 3px) 100% 0,
+    linear-gradient(to top, #2596be 3px, transparent 3px) 0 100%,
+    linear-gradient(to top, #2596be 3px, transparent 3px) 100% 100%;
 
   background-repeat: no-repeat;
   background-size: 20px 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+ }
+
+ .specialty-menu li {
+    display: inline-block;
+    border: none;
+    padding: 1rem 1rem;
  }
 
 @media screen and (min-width: 800px) {
