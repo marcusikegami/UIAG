@@ -314,7 +314,7 @@ main h3 {
 
  main li {
     padding: 0.5rem 1rem;
-    list-style: none;
+    list-style-type: circle;
     border-top: 1px solid #2596be;
  }
  main div img {
