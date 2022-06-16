@@ -243,10 +243,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    /* margin: 0 10%; */
-    padding: 5rem;
     max-width: 100%;
-    /* margin: 0 5% 0 5%;   */
     background-color: #203c58;
     animation-name: about-fade;
     animation-duration: 2s;
@@ -265,8 +262,12 @@ nav {
  }
 
  .about-wrapper {
-    width: 70%;
+    width: 80%;
     color: white;
+    padding: 3rem;
+    margin: 0.5rem;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
  }
 
  .about h2 {
@@ -277,10 +278,12 @@ nav {
  }
 
  main h1, main h2 {
-    padding: 0.75rem 0rem;
+    padding: 0.75rem 1rem;
     margin: 0.25rem 0;
     color: #203c58;
-    /* display: inline-block; */
+    display: inline-block;
+    border-bottom: 2px solid #203c58;
+    margin-bottom: 1rem;
 }
 
 main h3 {
@@ -340,6 +343,20 @@ main h3 {
     /* text-decoration: underline; */
     padding: 1rem 1rem 0 0;
  }
+
+ .specialty-menu li:hover {
+    animation-name: li-hover;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards ;
+    transition: 0.5s;
+ }
+
+ @keyframes li-hover {
+    0% { font-size: large;}
+    100% {font-size: larger;}
+ }
+
 
  /* END BODY/MAIN  */
 
@@ -462,7 +479,7 @@ main h3 {
         /* margin: 0 10%; */
         padding-top: 1rem;
         max-width: 90%;
-        margin: 0 5% 0 5%;
+        margin: 0 5% 5% 5%;
      }
 
      .panel-left {
