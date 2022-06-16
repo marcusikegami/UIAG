@@ -176,6 +176,13 @@ nav {
     width: 100%;
     height: auto;
     /* font-family: 'Adelle Sans', Helvetica, Arial, sans-serif; */
+    animation: 2s ease-out 0s 1 hero-fade;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-fade {
+    0% { opacity: 0; height: 0%;}
+    100% {opacity: 1; height: 100% }
 }
 
 /* .banner-gradient {
@@ -237,28 +244,15 @@ nav {
     margin: none;
  }
 
- .about {
+ #about {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    max-width: 100%;
+    min-width: 100%;
     background-color: #203c58;
-    animation-name: about-fade;
-    animation-duration: 2s;
-    overflow: none;
- }
-
- @keyframes about-fade {
-     0% {
-        padding: initial;
-        display: none;
-    }
-     100% {
-        padding:  none;
-        display: flex;
-    }
+    overflow:hidden;
  }
 
  .about-wrapper {
@@ -272,9 +266,17 @@ nav {
 
  .about h2 {
     display: inline-block;
-    border-bottom: 2px solid white;
-    padding: 0 2rem 0.5rem 2rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     margin-bottom: 1rem;
+ }
+
+ .about h3 {
+    padding-top: 1rem;
+ }
+ .about h4, .about p {
+    padding-top: 0.5rem;
  }
 
  main h1, main h2 {
@@ -350,7 +352,7 @@ main h3 {
     animation-duration: 0.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards ;
-    transition: 0.5s;
+    /* transition: 0.5s; */
  }
 
  @keyframes li-hover {
@@ -492,6 +494,7 @@ main h3 {
         max-width: 50%;
         background: none
     };
+
     .panel-left, .panel-right {
         padding-left: 0.5rem;
         border-left: 2px solid #203c58;
