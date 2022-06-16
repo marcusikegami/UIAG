@@ -21,7 +21,7 @@
           </div>
         </a>
             <div class="dropdown">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
                 <i class="fa fa-bars"></i>
             </a> 
             </div>
@@ -150,10 +150,12 @@
     </main>
     <div id="footer" class="footer">
       <p>&copy; 2022 Utah Injury Analysis Group, LLC</p>
+      <p>435-300-0472</p>
+      <p>joe@injuryanalysisgroup.com</p>
     </div>
 </body>
 <script>
-    function myFunction() {
+    function dropdown() {
       if(window.matchMedia("(max-width: 800px)").matches) {
            var x = document.getElementById("navLinks");
       if (x.style.display === "block") {
