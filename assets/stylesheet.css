@@ -248,6 +248,20 @@ nav {
     max-width: 100%;
     /* margin: 0 5% 0 5%;   */
     background-color: #203c58;
+    animation-name: about-fade;
+    animation-duration: 2s;
+    overflow: none;
+ }
+
+ @keyframes about-fade {
+     0% {
+        padding: initial;
+        display: none;
+    }
+     100% {
+        padding:  none;
+        display: flex;
+    }
  }
 
  .about-wrapper {
@@ -258,7 +272,7 @@ nav {
  .about h2 {
     display: inline-block;
     border-bottom: 2px solid white;
-    padding: 0 1rem 0.5rem 1rem;
+    padding: 0 2rem 0.5rem 2rem;
     margin-bottom: 1rem;
  }
 
