@@ -408,13 +408,20 @@ main h3 {
 
  
 
- .cta-form input {
+ .cta-form input, .form-textarea {
+    font: initial;
     display: block;
     padding: 0.75rem 0.5rem;
     width: 100%;
     margin-top: 1.5rem;
     border: 2px solid #203c58;
     border-style: solid;
+ }
+
+ #description {
+    padding: 0.75rem 0.5rem 3rem 0.5rem;
+    overflow-wrap: break-word;
+    font: initial
  }
 
 
