@@ -322,8 +322,8 @@ main h3 {
   }
  
 
- .service-menu, .specialty-menu {
-    background:
+ .service-menu, .specialty-menu, .contact {
+    /* background:
     linear-gradient(to right, #2596be 3px, transparent 3px) 0 0,
     linear-gradient(to right, #2596be 3px, transparent 3px) 0 100%,
     linear-gradient(to left, #2596be 3px, transparent 3px) 100% 0,
@@ -335,7 +335,7 @@ main h3 {
 
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  width: 100%;
+  width: 100%; */
   margin-bottom: 1rem;
   padding: 1rem 1rem;
  }
@@ -372,7 +372,8 @@ main h3 {
     justify-content: center;
     padding: 0 15%;
     border: 6px solid #203c58;
-    width: 75%;
+    width: 100%;
+    margin: 1rem 0;
  }
 
  .cta-form {
@@ -541,10 +542,6 @@ main h3 {
         margin: 0 5% 5% 5%;
      }
 
-     .panel-left {
-        width: 100%;
-     }
-
     .service-menu, .specialty-menu {
         display: inline;
         max-width: 50%;
@@ -555,6 +552,11 @@ main h3 {
         padding-left: 0.5rem;
         border-left: 2px solid #203c58;
     }
+    
+    .panel-left {
+        padding-right: 2rem;
+        width: 100%;
+     }
 }
 
 @media screen and (min-width: 1024px) {
@@ -575,12 +577,10 @@ main h3 {
         font-size: 20px;
         text-shadow: 2px 2px 8px rgb(0 0 0 / 80%);
        }
+
 }
 
-.panel-left {
-    padding: 0 2rem 0 0;
-    width: 100%;
- }
+
 
  @media screen and (min-width: 1400px) {
     main {
@@ -594,4 +594,5 @@ main h3 {
         max-width: 100%;
         margin: 0 10% 5% 10%;
      }
+     
 }
