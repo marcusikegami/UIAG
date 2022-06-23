@@ -23,6 +23,16 @@
     font-style: normal;
 
 }
+p, li {
+    /* font-family: 'Times New Roman', Times, serif; 
+    font-weight: 500;
+    color:#0f253b;
+    font-size: 20px;  */
+}
+
+p {
+    line-height: 1.3rem;
+}
 
 body {
   margin: 0;
@@ -117,6 +127,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
 }
 
 .icon-wrapper img {
@@ -279,7 +290,7 @@ nav {
     padding-top: 0.5rem;
  }
 
- main h1, main h2 {
+ main h1, main h2, .contact h2 {
     padding: 0.75rem 1rem;
     margin: 0.25rem 0;
     color: #203c58;
@@ -315,7 +326,7 @@ main h3 {
  main li {
     padding: 0.5rem 1rem;
     list-style-type: circle;
-    border-top: 1px solid #2596be;
+    border-top: 1px solid #203c58;
  }
  main div img {
     max-width: 100%;
@@ -427,10 +438,45 @@ main h3 {
 
  /* END BODY/MAIN  */
 
+
+ /* TESTIMONIALS */
+
+ .testimonials-container {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #203c589d, #203c58);
+    padding: 3rem 0;
+ }
+
+ .testimonials {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+ }
+
+ .testimonials h1 {
+    border-bottom: 2px solid white;
+ }
+
+ .testimonial {
+    width: 50%;
+    padding: 1rem 0;
+    text-align: left;
+ }
+
+ .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+
  .footer {
     padding: 1rem 0;
     color: white;
-    background-color: #203c58;
+    background-image: linear-gradient(to right, #203c589d, #203c58);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -504,6 +550,15 @@ main h3 {
     
     #navLinks a:hover {
         background-color: #eef4f9;
+        animation-name: a-hover;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards ;
+    }
+
+    @keyframes a-hover {
+        0% { box-shadow: none;}
+        100% { box-shadow: 2px 2px 2px #203c5895}
     }
 
     /* .banner-gradient {
