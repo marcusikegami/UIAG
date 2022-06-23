@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/stylesheet.css">
+    <title>Utah Injury Analysis Group</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrapper">
+            <a href="./index.html">
+            <div class="icon-wrapper">
+                <img class="logo" src="./assets/images/iaglogo.png" role="complementary" alt="Utah Injury Analysis Group Logo">
+                <div class="logo-text">
+                  <p id="logo-text">Injury Analysis Group</p>
+                  <p class="logo-underline"></p>
+                </div>
+            </div>
+          </a>
+              <div class="dropdown">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+              </a> 
+              </div>
+          </div>
+        <div id="navLinks">
+                <a href="./index.html">
+                    Home
+                </a>
+                <a class="button-34" href="./index.html#specialties">
+                    Provider Specialties
+                </a>
+                <a class="button-34" href="./index.html#contact">
+                    Redacted Report
+                </a>
+                <a class="button-34" href="./index.html#about">
+                    About Us
+                </a>
+        </div>
+        
+    </div>
+    <main>
+        <div class="job-listings">
+            <h1>Our Open Positions</h1>
+            <h3><a href="https://docs.google.com/forms/d/e/1FAIpQLSd7kI817p3pZ0YkPCTSjnCIRvete7b4n6Qpo-BAY3tt7BYQrw/viewform">Medical Forensics Specialist Interest Form</a></h3>
+
+        </div>
+    </main>
+    <div id="footer">
+
+    </div>
+</body>
+<script>
+    function myFunction() {
+      if(window.matchMedia("(max-width: 800px)").matches) {
+           var x = document.getElementById("navLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+     } 
+     }
+ }
+</script>
+</html>
