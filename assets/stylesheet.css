@@ -233,13 +233,17 @@ nav {
 }
 
 .cta-button:hover {
-    animation: cta-button 0.5s ease-in forwards;
+    animation: cta-button 0.5s forwards;
     cursor: pointer;
 }
 
 @keyframes cta-button {
-    0% {transform: translatey(0px);}
-    100% { transform: translatey(2px); }
+    0% {}
+    100% { 
+        /* transform: translatey(1px); */
+        transform: scale(1.03);
+        background-color: #203c58d9;
+     }
 }
 
 .cta-button h2 {
@@ -466,6 +470,10 @@ main h3 {
     border-bottom: 2px solid #203c58;
  }
 
+ .testimonials h3 {
+    padding-bottom: 0;
+ }
+
  .testimonial {
     width: 50%;
     padding: 1rem 0;
@@ -504,6 +512,25 @@ main h3 {
  .job-listings div {
     padding: 1rem 0;
  }
+
+ .job-listings div a {
+    text-decoration: underline;
+    color: #203c58;
+}
+
+.job-listings div a:hover {
+    text-decoration:double;
+    color: rgb(255, 0, 0);
+
+ }
+
+ #report-iframe {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+ }
+
+
 
 @media screen and (min-width: 800px) {
 .body {
@@ -575,7 +602,7 @@ main h3 {
         background-color: #eef4f9;
         animation-name: a-hover;
         animation-duration: 0.3s;
-        animation-timing-function: ease;
+        animation-timing-function:ease-out;
         animation-fill-mode: forwards ;
     }
 
