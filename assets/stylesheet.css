@@ -101,7 +101,7 @@ body {
 }
 
 .header a.icon {
-    background: #2596be;
+    background: #14789d;
   }
 
 .header a:active {
@@ -460,6 +460,46 @@ main h3 {
 
 
  /* END BODY/MAIN  */
+
+ .report-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-top: 1rem;
+ }
+
+ .report-button-wrapper div {
+    margin: 0 0.5rem;
+    padding: 1rem 0;
+    border: 1px solid #203c58;
+    border-radius: 5px;
+    background-color: #203c58;
+    background-color: #203c58;
+    box-shadow: 2px 2px 3px black;
+    animation: report 0.5s forwards 0 1 forwards forwards;
+ }
+ 
+ .report-button-wrapper a {
+    color: white;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.311));
+    padding: 1rem 1rem;
+    color: white;
+ }
+ 
+ .report-button-wrapper div:hover {
+    animation: cta-button 0.5s forwards;
+    cursor: pointer;
+}
+
+@keyframes report {
+    0% {}
+    100% { 
+        /* transform: translatey(1px); */
+        transform: scale(1.03);
+        background-color: #203c58d9;
+     }
+}
 
 
  /* TESTIMONIALS */
