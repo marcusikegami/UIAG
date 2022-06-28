@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+div {
+    display: initial;
+}
+
 @font-face {
     font-family: 'coldiacregular';
     src: url('http://127.0.0.1:5500/coldiac-webfont.woff2') format('woff2'),
@@ -180,7 +184,7 @@ nav {
 /* HERO */
 
 #hero {
-    background-image: url("../assets/images/meeting.jpg");
+    background-image: url("../assets/images/meeting.avif");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -295,7 +299,7 @@ nav {
  }
 
  #about img {
-    width: 80%;
+    width: 70%;
     height: auto;
  }
 
@@ -330,7 +334,6 @@ nav {
 
  main h1, main h2, .contact h2 {
     padding: 0.75rem 1rem;
-    margin: 0.25rem 0;
     color: #203c58;
     display: inline-block;
     border-bottom: 2px solid #203c58;
@@ -350,9 +353,6 @@ main h3 {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding-top: 1rem;
-    max-width: 90%;
-    margin: 0 5% 0 5%;
  }
 
 
@@ -369,10 +369,14 @@ main h3 {
  main div img {
     max-width: 100%;
   }
+
+ #main {
+    width: 95%;
+ }
  
 
- .service-menu, .specialty-menu, .contact {
-  margin-bottom: 1rem;
+ .service-menu, .specialty-menu {
+  /* margin-bottom: 1rem; */
   padding: 1rem 1rem;
  }
 
@@ -461,33 +465,40 @@ main h3 {
 
  /* END BODY/MAIN  */
 
+ .report-buttons {
+    max-width: 100%;
+    padding: 1rem 0;
+ }
+
  .report-button-wrapper {
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-top: 1rem;
+    padding: 1rem 0;
  }
 
  .report-button-wrapper div {
-    margin: 0 0.5rem;
-    padding: 1rem 0;
-    border: 1px solid #203c58;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0.5rem;
+    padding: 1rem 1rem;
     border-radius: 5px;
-    background-color: #203c58;
     background-color: #203c58;
     box-shadow: 2px 2px 3px black;
     animation: report 0.5s forwards 0 1 forwards forwards;
+    text-align: center;
  }
  
  .report-button-wrapper a {
     color: white;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.311));
-    padding: 1rem 1rem;
-    color: white;
+    /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.311)); */
+    /* padding: 1rem 1rem; */
+    text-align: center;
  }
- 
+
  .report-button-wrapper div:hover {
+    color: #2596be;
     animation: cta-button 0.5s forwards;
     cursor: pointer;
 }
@@ -506,8 +517,7 @@ main h3 {
 
  .testimonials-container {
     display: flex;
-    /* justify-content: center;
-    padding: 3rem 0; */
+    padding: 1rem 0;
  }
 
  .testimonials {
@@ -545,12 +555,13 @@ main h3 {
  }
 
  .footer {
-    padding: none;
+    padding-bottom: 1rem;
     color: white;
     background-color: #203c58;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     text-align: center;
  }
 
@@ -697,7 +708,7 @@ main h3 {
     }
 
     #about img {
-        width: 50%;
+        width: 40%;
         height: auto;
      }
 
@@ -706,33 +717,67 @@ main h3 {
         color: white;
      }
 
+     .report-button-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        padding-top: 1rem;
+     }
+
+    .report-button-wrapper div {
+        /* display: flex; */
+        align-items: center;
+        margin: 0 0.5rem;
+        padding: 1rem 1rem;
+        border-radius: 5px;
+        background-color: #203c58;
+        box-shadow: 2px 2px 3px black;
+        animation: report 0.5s forwards 0 1 forwards forwards;
+        text-align: center;
+     }
+     
+     .report-button-wrapper a {
+        color: white;
+        /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.311)); */
+        /* padding: 1rem 1rem; */
+        text-align: center;
+     }
+    
+     .report-button-wrapper div:hover {
+        animation: cta-button 0.5s forwards;
+        cursor: pointer;
+    }
+    
+    @keyframes report {
+        0% {}
+        100% { 
+            /* transform: translatey(1px); */
+            transform: scale(1.03);
+            background-color: #203c58d9;
+         }
+    }
+
     main {
         display: flex;
         align-items: flex-start;
         justify-content: center;
         flex-direction: row;
         text-align: center;
-        /* margin: 0 10%; */
         padding-top: 1rem;
-        max-width: 100%;
-        margin: 0 5% 5% 5%;
+        width: 100%;
+        padding: 0 5% 5% 5%;
      }
 
     .service-menu, .specialty-menu {
         display: inline;
         max-width: 50%;
-        background: none
+        background: none;
     };
 
-    .panel-left, .panel-right {
-        padding-left: 0.5rem;
-        border-left: 2px solid #203c58;
-    }
     
-    .panel-left {
-        padding-right: 2rem;
-        width: 100%;
-     }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -744,8 +789,8 @@ main h3 {
         text-align: center;
         /* margin: 0 10%; */
         padding-top: 1rem;
-        max-width: 100%;
-        margin: 0 10% 5% 10%;   
+        width: 100%;
+        /* margin: 0 10% 5% 10%;    */
     }
     .body {
         font-size: 16px;
@@ -764,7 +809,14 @@ main h3 {
         font-size: 20px;
         text-shadow: 2px 2px 8px rgb(0 0 0 / 80%);
        }
-
+       .report-button-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        padding-top: 1rem;
+     }
 }
 
 
@@ -772,14 +824,13 @@ main h3 {
  @media screen and (min-width: 1400px) {
     main {
         display: flex;
-        align-items: flex-start;
+        align-content: center;
         justify-content: center;
         flex-direction: row;
         text-align: center;
-        /* margin: 0 10%; */
         padding-top: 1rem;
         max-width: 100%;
-        margin: 0 15% 5% 15%;
+        padding: 0 15% 5% 15%;
      }
      
 }
