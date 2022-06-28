@@ -184,15 +184,19 @@ nav {
 /* HERO */
 
 #hero {
-    background-image: url("../assets/images/meeting.avif");
+    display: block;
+    background-image:url("./images/meeting.avif");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
     width: 100%;
     height: auto;
-    /* font-family: 'Adelle Sans', Helvetica, Arial, sans-serif; */
     animation: 2s ease-out 0s 1 hero-fade;
     animation-fill-mode: forwards;
+}
+
+#hero {
+    background-image: url("./images/meeting.avif");
 }
 
 @keyframes hero-fade {
