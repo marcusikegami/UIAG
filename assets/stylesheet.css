@@ -16,9 +16,6 @@ div {
 
 }
 
-
-
-
 @font-face {
     font-family: 'coldiacregular';
     src: url('coldiac-webfont.woff2') format('woff2'),
@@ -26,12 +23,6 @@ div {
     font-weight: normal;
     font-style: normal;
 
-}
-p, li {
-    /* font-family: 'Times New Roman', Times, serif; 
-    font-weight: 500;
-    color:#0f253b;
-    font-size: 20px;  */
 }
 
 p {
@@ -224,7 +215,6 @@ nav {
     text-align: left;
     background-image: linear-gradient(to bottom, #203c58d0, #203c5820);
     padding: 1rem;
-
 }
 
 .cta-text {
@@ -248,7 +238,6 @@ nav {
 @keyframes cta-button {
     0% {}
     100% { 
-        /* transform: translatey(1px); */
         transform: scale(1.03);
         background-color: #203c58d9;
      }
@@ -380,7 +369,6 @@ main h3 {
  
 
  .service-menu, .specialty-menu {
-  /* margin-bottom: 1rem; */
   padding: 1rem 1rem;
  }
 
@@ -431,8 +419,8 @@ main h3 {
  }
 
  .cta-form button {
-    background-color: #203c58;
-    color: white;
+  background-color: #203c58;
+  color: white;
   border: none;
   padding: 1.25rem 3rem;
   text-align: center;
@@ -496,8 +484,6 @@ main h3 {
  
  .report-button-wrapper a {
     color: white;
-    /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.311)); */
-    /* padding: 1rem 1rem; */
     text-align: center;
  }
 
@@ -510,7 +496,6 @@ main h3 {
 @keyframes report {
     0% {}
     100% { 
-        /* transform: translatey(1px); */
         transform: scale(1.03);
         background-color: #203c58d9;
      }
@@ -549,7 +534,6 @@ main h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
  }
 
  .contact h2 {
@@ -594,11 +578,9 @@ main h3 {
 .job-listings div a:hover {
     text-decoration:double;
     color: rgb(255, 0, 0);
-
  }
 
  #report-iframe {
-    /* position: absolute; */
     width: 100%;
     height: 1000px;
  }
@@ -684,17 +666,8 @@ main h3 {
         100% { box-shadow: 2px 2px 2px #203c5895}
     }
 
-    /* .banner-gradient {
-        background-color: #ffffff00;
-        background-image: linear-gradient(45deg, rgba(255,0,0,0), #2595bec1);
-    } */
-
     .hero-text {
-        /* display: flex;
-        justify-items: center;
-        align-items: center; */
         padding: 10% 30%;
-        
     }
 
     .hero-cta h1, .hero-cta h3 {
@@ -731,7 +704,6 @@ main h3 {
      }
 
     .report-button-wrapper div {
-        /* display: flex; */
         align-items: center;
         margin: 0 0.5rem;
         padding: 1rem 1rem;
@@ -744,8 +716,6 @@ main h3 {
      
      .report-button-wrapper a {
         color: white;
-        /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.311)); */
-        /* padding: 1rem 1rem; */
         text-align: center;
      }
     
@@ -757,7 +727,6 @@ main h3 {
     @keyframes report {
         0% {}
         100% { 
-            /* transform: translatey(1px); */
             transform: scale(1.03);
             background-color: #203c58d9;
          }
@@ -791,10 +760,8 @@ main h3 {
         justify-content: center;
         flex-direction: row;
         text-align: center;
-        /* margin: 0 10%; */
         padding-top: 1rem;
         width: 100%;
-        /* margin: 0 10% 5% 10%;    */
     }
     .body {
         font-size: 16px;
@@ -822,8 +789,6 @@ main h3 {
         padding-top: 1rem;
      }
 }
-
-
 
  @media screen and (min-width: 1400px) {
     main {
