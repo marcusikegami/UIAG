@@ -553,6 +553,11 @@ main h3 {
     text-align: center;
  }
 
+ .listings-wrapper {
+    display: flex;
+    justify-content: center;
+ }
+
   .job-listings-header {
      display: block;
      background-color: #203c58;
@@ -564,6 +569,7 @@ main h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
  }
  
  .job-listings div {
@@ -578,6 +584,11 @@ main h3 {
 .job-listings div a:hover {
     text-decoration:double;
     color: rgb(255, 0, 0);
+ }
+
+ .listing-description {
+    text-align: left;
+    padding-bottom: 1rem;
  }
 
  #report-iframe {
@@ -749,6 +760,9 @@ main h3 {
         background: none;
     };
 
+    .job-listings {
+        width: 80%;
+    }
     
 
 }
@@ -801,5 +815,7 @@ main h3 {
         max-width: 100%;
         padding: 0 15% 5% 15%;
      }
-     
+     .job-listings {
+        width: 70%;
+     }
 }
