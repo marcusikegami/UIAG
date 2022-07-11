@@ -13,7 +13,7 @@ div {
          url('http://127.0.0.1:5500/coldiac-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: fallback;
 }
 
 @font-face {
@@ -22,7 +22,7 @@ div {
          url('coldiac-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: fallback;
 }
 
 p {
@@ -177,19 +177,18 @@ nav {
     background-repeat: no-repeat; 
     background-size: cover; 
     width: 100%;
-    height: auto;
-    animation: 2s ease-out 0s 1 hero-fade;
-    animation-fill-mode: forwards;
+    /* animation: 2s ease-out 0s 1 hero-fade;
+    animation-fill-mode: forwards; */
 }
 
 #hero {
     background-image: url("./images/meeting.avif");
 }
 
-@keyframes hero-fade {
+/* @keyframes hero-fade {
     0% { opacity: 0.5; height: 0%;}
     100% {opacity: 1; height: 100% }
-}
+} */
 
 .hero-text {
     display: flex;
