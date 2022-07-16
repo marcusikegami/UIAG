@@ -384,7 +384,7 @@ main h3 {
     padding: 1rem 1rem 0 0;
  }
 
- .specialty-menu li:hover {
+ /* .specialty-menu li:hover {
     animation-name: li-hover;
     animation-duration: 0.5s;
     animation-timing-function: ease;
@@ -394,7 +394,7 @@ main h3 {
  @keyframes li-hover {
     0% { font-size: large;}
     100% {font-size: larger;}
- }
+ } */
 
  .cta-wrapper {
     display: flex;
