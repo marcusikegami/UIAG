@@ -333,7 +333,7 @@ nav {
  }
 
  main h1, main h2, .contact h2 {
-    padding: 0.75rem 1rem;
+    padding: 1.75rem 1rem 0.75rem 1rem;
     color: #203c58;
     display: inline-block;
     border-bottom: 2px solid #203c58;
