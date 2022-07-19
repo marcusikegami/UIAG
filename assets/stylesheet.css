@@ -26,7 +26,7 @@ div {
 }
 
 p {
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 }
 
 body {
@@ -528,11 +528,12 @@ main h3 {
  }
 
  .testimonials h3 {
-    padding-bottom: 0;
+    padding: 0.5rem 0;
+    color: #203c58
  }
 
  .testimonial {
-    width: 50%;
+    width: 80%;
     padding: 1rem 0;
     text-align: left;
  }
@@ -701,6 +702,10 @@ main h3 {
 
     .cta-text {
         text-align: left;
+    }
+
+    .testimonial {
+        width: 50%;
     }
 
     #about img {
