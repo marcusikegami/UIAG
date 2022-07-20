@@ -184,7 +184,12 @@ nav {
 
 #hero {
     display: block;
-    background-image:url("./images/meeting.avif");
+    background-image: -webkit-image-set(
+        url("./images/meeting.avif") type("image/avif"),
+        url("./images/meeting.jpeg) type("image/jpeg"));
+    background-image: image-set(
+        url("./images/meeting.avif") type("image/avif"),
+        url("./images/meeting.jpeg) type("image/jpeg"));
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
